@@ -11,7 +11,7 @@ window.onload = () => {
     document.body.addEventListener("keyup", e => listenForEsc(e));
   };
   
-  /** Esta funcion se llama cuando la persona hace click en la fecha derecha del carousel para navegar a la derecha */
+ 
   function clickRight() {
     const currentLeft = parseInt(
       getComputedStyle(document.querySelector(".project-container")).left,
@@ -40,7 +40,7 @@ window.onload = () => {
     }
   }
   
-  /** Esta funcion se llama cuando la persona hace click en la fecha izquierda del carousel para navegar a la izquierda */
+ 
   function clickLeft() {
     const currentLeft = parseInt(
       getComputedStyle(document.querySelector(".project-container")).left,
@@ -69,7 +69,7 @@ window.onload = () => {
     }
   }
   
-  /** Validar el formulario antes de mostrar la notificacion */
+
   function validateForm(e) {
     e.preventDefault();
     const nameField = document.getElementById("name");
@@ -80,7 +80,6 @@ window.onload = () => {
     }
   }
   
-  /** Esta funcion se llama cuando la persona hace click en el boton de enviar del formulario de contacto */
   function showNotification() {
     document.getElementById("name-error").innerHTML = "";
     document.querySelector('.form-container').reset();
@@ -91,20 +90,18 @@ window.onload = () => {
     }, 3000);
   }
   
-  /**Escucha por la clave esc para cerrar el modal */
   function listenForEsc(e) {
     if (e.keyCode === 27){
       closeModal(e)
     }
   }
   
-  /** Esta funcion se llama cuando la persona hace click en cualquier porjecto del carousel */
   function openModal(e) {
     document.querySelector(".modal-container").style.display = "flex";
     document.getElementById('modal-header').focus();
   }
   
-  /** Esta funcion se llama para cerrar el modal */
+ 
   function closeModal(e) {
     // si el click occurio dentro del las imagenes del carousel o dentro del modal, no se cierra el modal
     if (
