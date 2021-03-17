@@ -1,1 +1,1 @@
-# Pruba practica de accesibilidad web
+# Prueba practica de accesibilidad web
